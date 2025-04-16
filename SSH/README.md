@@ -2,17 +2,17 @@
 
 ### Service Overview
 
-SSH (Secure Shell) is a cryptographic protocol used to securely access remote systems. On Metasploitable 2, SSH runs on port 22, allowing secure terminal sessions. However, due to default or weak credentials, it's often possible to gain unauthorized access.
+*SSH (Secure Shell)* is a cryptographic protocol used to securely access remote systems. On Metasploitable 2, SSH runs on port 22, allowing secure terminal sessions. However, due to default or weak credentials, it's often possible to gain unauthorized access.
 
 ---
 
 ## Vulnerabbility Overview
 
-- Name: SSH Weak Credential Login
-- CVE: None (misconfiguration issue, not a code vulnerability)
-- Impact: Unauthorized remote shell access
-- Access Required: None (brute-force or known credentials)
-- Attack Type: Credential-based Bruteforce
+- **Name**: SSH Weak Credential Login
+- **CVE**: None (misconfiguration issue, not a code vulnerability)
+- **Impact**: Unauthorized remote shell access
+- **Access Required**: None (brute-force or known credentials)
+- **Attack Type**: Credential-based Bruteforce
 
 ```
 The SSH service itself is not vulnerable. The issue lies in the fact that Metasploitable 2 contains several default user accounts (e.g., msfadmin, user, postgres, root) with known or weak passwords (usually the same as the username).
